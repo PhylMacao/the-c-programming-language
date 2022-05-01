@@ -16,6 +16,10 @@ int main()
 unsigned setbits(unsigned x, unsigned p, unsigned n, unsigned y)
 {
     /*
+     * The example uses right adjusted n-bit field,
+     * I choose to return left adjusted because it
+     * feels more natural and it isn't explicityly
+     * stated in the exercise.
      * counting from the right, we need to do
      *    ...p...0
      * xxxx000xxxx
